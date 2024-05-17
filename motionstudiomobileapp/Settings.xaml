@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Settings"
+             Shell.BackgroundColor="#ffbd59"
+             BackgroundColor="#2b2b2b"
+             Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+    <StackLayout>
+        <Frame CornerRadius="5"
+               HeightRequest="400">
+            <Label Text="More features to come!"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="#ffbd59"
+                   HorizontalOptions="Center"
+                   Margin="0,150,0,0"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>

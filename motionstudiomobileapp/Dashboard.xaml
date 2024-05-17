@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="http://schemas.microsoft.com/dotnet/2022/maui/Controls"
+             x:Class="motionstudiomobileapp.Dashboard"
+             BackgroundColor="#fff"
+             Padding="17"  
+             NavigationPage.HasBackButton="False"
+             Shell.TitleColor="#ffbd59"
+             NavigationPage.HasNavigationBar="false"
+             Shell.BackgroundColor="#ffbd59"
+             Shell.ForegroundColor="#ffbd59"
+              Shell.NavBarIsVisible="False"
+             >
+             
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    Background="#2b2b2b"
+                    VerticalOptions="Start"
+                    Padding="15">
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+                                         Grid.Column="0"
+                                         Spacing="10">
+                        <Label
+                            Text="Welcome"
+                            TextColor="#fff"
+                            FontSize="25"
+                            FontAttributes="Bold"
+                            VerticalOptions="Center"/>
+                        <Label                             
+                             Text="Dashboard"
+                             x:Name="UserEmail"
+                             TextColor="#fff"
+                             FontSize="14" 
+                            />
+
+                    </VerticalStackLayout>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Settings"
+                        Clicked="settingsBtn"
+                        BackgroundColor="#ffbd59"
+                        FontAttributes="Bold"
+                        CornerRadius="22"
+                        ImageSource="arrow.png"                        
+                       />
+                    <Image
+                        Grid.RowSpan="2"
+                        Grid.Column="1"
+                        Source="gymm.png"
+                        Scale="0.7"
+                        HeightRequest="150"
+                        WidthRequest="150"/>
+
+                </Grid>
+            </Border>
+
+            <BoxView HeightRequest="15"
+                     Color="White"/>
+
+            <Grid ColumnDefinitions="*, *">
+                <Label
+                    Grid.Column="0"
+                    Text="DASHBOARD"
+                    TextColor="#2B2B2B"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="15"
+                    VerticalOptions="End"/>
+            </Grid>
+
+            <FlexLayout Wrap="Wrap">
+                <!--WORKOUTS-->
+                <Border
+                    StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#2b2b2b"
+                    Padding="0"
+                    Margin="2"
+                    >
+
+                    <Grid RowDefinitions="150, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-68,0">
+                        <Image Grid.Row="0"
+                               Source="workoutpg.jpg"
+                               Scale=".7"
+                               TranslationY="-22"
+                               TranslationX="-36"/>
+
+                        <Label
+                            Grid.Row="1"
+                            Text="Workout"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#ffbd59"
+                            HorizontalOptions="Center"
+                            Margin="0,0,100,0"
+                            />
+
+                        <Button
+                            Grid.Row="6"
+                            Text="View More"
+                            Clicked="workoutBtn"
+                            FontAttributes="Bold"
+                            FontSize="15"
+                            BackgroundColor="#ffbd59"
+                            CornerRadius="5"
+                            HorizontalOptions="Center"
+                            WidthRequest="120"
+                            HeightRequest="36"
+                            Margin="0,0,65,0"/>
+
+                    </Grid>
+                    
+                </Border>
+                <!--MEALS-->
+                <Border
+                    StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#2b2b2b"
+                    Padding="0"
+                    Margin="2"
+                    > 
+
+                    <Grid RowDefinitions="150, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-68,0">
+                        <Image Grid.Row="0"
+                               Source="mealspg.jpg"
+                               Scale=".7"
+                               TranslationY="-22"
+                               TranslationX="-36"
+                               />
+
+                        <Label
+                               Grid.Row="1"
+                               Text="Meals"
+                               FontSize="17"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,130,0"
+                              
+                               />
+
+                        <Button
+                               Grid.Row="6"
+                               Text="View More"
+                               Clicked="mealsBtn"
+                               FontAttributes="Bold"
+                               FontSize="15"
+                               BackgroundColor="#ffbd59"
+                               CornerRadius="5"
+                               HorizontalOptions="Center"
+                               WidthRequest="120"
+                               HeightRequest="36"
+                               Margin="0,0,65,0"/>
+
+                    </Grid>
+
+                </Border>
+                <!--INQUIRY-->
+                <Border
+                    StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#2b2b2b"
+                    Padding="0 "
+                    Margin="2">
+
+                    <Grid RowDefinitions="212, Auto, auto, Auto"
+                          RowSpacing="5">
+                        <Image Grid.Row="0"
+                               Source="inquirypg.jpg"
+                               
+                               />
+
+                        <Label
+                               Grid.Row="0"
+                               Text="Inquiry"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,150,235,0"
+                               HorizontalTextAlignment="Start"
+                               />
+
+                        <Button
+                               Grid.Row="0"
+                               Text="View More"
+                               Clicked="inquiryBtn"
+                               FontAttributes="Bold"
+                               FontSize="15"
+                               BackgroundColor="#ffbd59"
+                               CornerRadius="5"
+                               HorizontalOptions="Center"
+                               WidthRequest="320"
+                               HeightRequest="50"
+                               Margin="0,145,0,0"
+                               TranslationY="30"/>
+
+                    </Grid>
+                    
+                    
+
+                </Border>
+                <!--CALENDAR-->
+                <Border
+                    StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    BackgroundColor="#2b2b2b"
+                    Padding="0 "
+                    Margin="2">
+
+                    <Grid RowDefinitions="212, Auto, auto, Auto"
+                          RowSpacing="5">
+                        <Image Grid.Row="0"
+                               Source="calendarpg.jpg"
+                               />
+
+                        <Label Grid.Row="0"
+                               Text="Calendar"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,150,220,0"
+                               HorizontalTextAlignment="Start"
+                               />
+
+                        <Button Grid.Row="0"
+                                Text="View More"
+                                Clicked="calendarBtn"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="320"
+                                HeightRequest="50"
+                                Margin="0,145,0,0"
+                                TranslationY="30"/>
+
+                    </Grid>
+                </Border>
+                <!--CHECKLIST-->
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0 "
+                        Margin="2">
+
+                    <Grid RowDefinitions="212, Auto, auto, Auto"
+                          RowSpacing="5">
+                        <Image Grid.Row="0"
+                               Source="checklist.jpg"
+                />
+
+                        <Label Grid.Row="0"
+                               Text="Check List"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,150,210,0"
+                               HorizontalTextAlignment="Start"
+                                />
+
+                        <Button Grid.Row="0"
+                                Text="View More"
+                                Clicked="checklistBtn"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="320"
+                                HeightRequest="50"
+                                Margin="0,145,0,0"
+                                TranslationY="30"/>
+
+                    </Grid>
+                </Border>
+
+
+            </FlexLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

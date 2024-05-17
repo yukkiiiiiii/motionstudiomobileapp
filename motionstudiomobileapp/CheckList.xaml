@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.CheckList"
+             NavigationPage.HasNavigationBar="false"
+             Shell.BackgroundColor="#ffbd59"
+             BackgroundColor="#FFF"
+             Shell.ForegroundColor="#2b2b2b">
+    <StackLayout  Padding="20">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Border HeightRequest="650"
+                    WidthRequest="330"
+                    TranslationX="-5"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    >
+                <ScrollView>
+                <StackLayout x:Name="mainStackLayout" BackgroundColor="#2B2B2B">
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Label Text="Check List" 
+                               FontSize="20" FontAttributes="Bold" 
+                               TextColor="#ffbd59" Margin="20,20,0,20"/>
+                        <Button Text="+" 
+                                Clicked="AddNewItemButton_Clicked"
+                                TranslationX="180"
+                                FontSize="20" 
+                                WidthRequest="45" 
+                                HeightRequest="45"
+                                Scale=".58"
+                                BackgroundColor="#FFBD59"
+                                 /> 
+
+                    </StackLayout>
+                    <StackLayout 
+                        Grid.Row="1" 
+                        Orientation="Horizontal">
+                        <CheckBox 
+                            Margin="20,0,0,0" 
+                            Color="#FFBD59" 
+                            HorizontalOptions="Start"/>
+                        <Entry 
+                            Placeholder="Enter Item" 
+                            Margin="10,0,0,0"
+                            TextColor="#FFF"
+                            />
+                    </StackLayout>
+                    <StackLayout 
+                        Grid.Row="1" 
+                        Orientation="Horizontal">
+                        <CheckBox 
+                            Margin="20,0,0,0" 
+                            Color="#FFBD59" 
+                            HorizontalOptions="Start"/>
+                        <Entry 
+                            Placeholder="Enter Item" 
+                            Margin="10,0,0,0"
+                             TextColor="#FFF"/>
+                    </StackLayout>
+                    <StackLayout 
+                        Grid.Row="1" 
+                        Orientation="Horizontal">
+                        <CheckBox 
+                            Margin="20,0,0,0" 
+                            Color="#FFBD59" 
+                            HorizontalOptions="Start"/>
+                        <Entry 
+                            Placeholder="Enter Item" 
+                            Margin="10,0,0,0"
+                             TextColor="#FFF"/>
+                    </StackLayout>
+                    <StackLayout 
+                        Grid.Row="1" 
+                        Orientation="Horizontal">
+                        <CheckBox 
+                            Margin="20,0,0,0" 
+                            Color="#FFBD59" 
+                            HorizontalOptions="Start"/>
+                        <Entry 
+                            Placeholder="Enter Item" 
+                            Margin="10,0,0,0"
+                             TextColor="#FFF"/>
+                    </StackLayout>
+                    <StackLayout 
+                        Grid.Row="1" 
+                        Orientation="Horizontal">
+                        <CheckBox 
+                            Margin="20,0,0,0" 
+                            Color="#FFBD59" 
+                            HorizontalOptions="Start"/>
+                        <Entry 
+                            Placeholder="Enter Item" 
+                            Margin="10,0,0,0"
+                            TextColor="#FFF"                           
+                            />
+                    </StackLayout>
+
+                </StackLayout>
+                </ScrollView>
+            </Border>
+        </Grid>
+
+        
+
+    </StackLayout>
+</ContentPage>

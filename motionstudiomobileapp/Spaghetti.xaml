@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Spaghetti"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59"
+             Background="#fff"
+              Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+                    StrokeThickness="0"
+                    Background="#2b2b2b"
+                    VerticalOptions="Start"
+                    Padding="15"
+                    >
+                <Grid ColumnDefinitions="*, 150"
+                      RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+                     Grid.Column="0"
+                     Spacing="10">
+                        
+                        <Label Text="Spaghetti"
+                       TextColor="#fff"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                        <Frame TranslationX="67">
+                            <Image Source="spag.png"
+                                   Scale="1.5"
+                                   Margin="0,0,20,0"
+                                   />
+                        </Frame>
+
+                        <Label Text="ingridient:"              
+                       TextColor="#FFBD59"
+                       FontSize="25"
+                       FontAttributes="Bold"/>
+                        <Label Text="Spaghetti pasta, Ground beef or turkey, Onion, Garlic, Tomato sauce, Olive oil, Italian seasoning, Parmesan cheese, Salt, Pepper"              
+                               TextColor="#fff"
+                               FontSize="20"
+                               FontAttributes="Italic"/>
+                        <Label Text="Procedure:"              
+                                TextColor="#FFBD59"
+                                FontSize="25"
+                                FontAttributes="Bold"/>
+                        <Label Text="Follow the directions on the package to cook the pasta. Fry the onion and garlic in olive oil in a different pan. Cook the ground beef or turkey until it turns brown. Add the Italian spice and tomato sauce, then simmer. Over cooked spaghetti, drizzle sauce top with Cheese Parmesan."              
+                               TextColor="#fff"
+                               FontSize="20"
+                               FontAttributes="Italic"/>
+                        <Label Text="Benefits:"              
+        TextColor="#FFBD59"
+        FontSize="25"
+        FontAttributes="Bold"/>
+                        <Label Text="Spaghetti provides carbohydrates for energy, Lean ground meat is a good source of protein, Tomatoes are rich in vitamins and antioxidants."              
+       TextColor="#fff"
+       FontSize="20"
+       FontAttributes="Italic"/>
+                    </VerticalStackLayout>
+
+                    
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

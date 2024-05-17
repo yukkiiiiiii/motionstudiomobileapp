@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.ChickenTinola"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59"
+             Background="#fff"
+              Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+                  StrokeThickness="0"
+                  Background="#2b2b2b"
+                  VerticalOptions="Start"
+                  Padding="15"
+                  >
+                <Grid ColumnDefinitions="*, 150"
+                    RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+                   Grid.Column="0"
+                   Spacing="10">
+
+                        <Label Text="Chicken Tinola"
+                     TextColor="#fff"
+                     FontSize="25"
+                     FontAttributes="Bold"
+                     VerticalOptions="Center"/>
+                        <Frame TranslationX="67">
+                            <Image Source="chickentinola.jpg"
+                                 Scale="1.4"
+                                 Margin="0,0,20,0"
+                                 />
+                        </Frame>
+
+                        <Label Text="ingridient:"              
+                     TextColor="#FFBD59"
+                     FontSize="25"
+                     FontAttributes="Bold"/>
+                        <Label Text="1 tbsp cooking oil
+                                     1 pc onion, small -sized, chopped
+                                     2 cloves garlic, chopped
+                                     1 pc ginger, cut into strips
+                                     ½ kilo chicken, cut into 8 pcs
+                               
+                                     4 cups water
+                                     2 pcs Knorr chicken cubes
+                                     1 pc chayote or 1 pc small - sized green papaya, sliced
+                                     2 stalks moringa leaves"              
+                             TextColor="#fff"
+                             FontSize="20"
+                             FontAttributes="Italic"/>
+                        
+                        <Label Text="Procedure:"              
+                              TextColor="#FFBD59"
+                              FontSize="25"
+                              FontAttributes="Bold"/>
+                        <Label Text="•Get a pot and bring it up to medium heat before pouring in the oil. Drop in the onions, garlic and ginger and sauté slowly for about 2 minutes or until you can smell the lovely aroma.
+                                    •It’s time to drop in the chicken pieces and stir until it turns white or light brown in color.
+
+                                •Pour in the water and add your Knorr Chicken Broth cubes. Bring this to a simmer until chicken is tender and cooked through.
+
+                                •You can now add your sayote or green papaya and cook until tender.
+                               
+
+                                •Dahon ng sili is added at the last stage to ensure leaves (and nutrients) don’t dry up. Give this a minute then it is done."              
+                             TextColor="#fff"
+                             FontSize="20"
+                             FontAttributes="Italic"/>
+                        
+                        <Label Text="Benefits:"              
+      TextColor="#FFBD59"
+      FontSize="25"
+      FontAttributes="Bold"/>
+                        <Label Text="provides an excellent source of protein and is considered a complete protein as it contains all of the essential amino acids the body needs to build muscle mass, body cells and tissue. Chicken is also a great source of magnesium, potassium, and B vitamins."              
+     TextColor="#fff"
+     FontSize="20"
+     FontAttributes="Italic"/>
+                    </VerticalStackLayout>
+
+
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Plank"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59">
+    <ScrollView>
+        <Grid Margin="15" RowDefinitions="Auto,Auto,Auto,Auto">
+            <Border Grid.Row="0" >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Grid RowDefinitions=".3*,.7*">
+                    <Image Grid.RowSpan="2"
+                           Aspect="AspectFill"
+                           TranslationY="0"
+                           Source="plank.jpg"/>
+                    <Grid ColumnDefinitions="*,*">
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Stroke="#2b2b2b">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30,30,30,30"/>
+                </Border.StrokeShape>
+                <Grid Padding="20"
+                      BackgroundColor="#4b4b4b"
+                      ColumnDefinitions=".5*,.25*,.5*"
+                      RowDefinitions="Auto,Auto,Auto">
+                    <Label Grid.ColumnSpan="2"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           Text="Plank"
+                           TextColor="#ffbd59"/>
+                    <Label Grid.Column="2"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"
+                           Text="Recommended sets"
+                           TextColor="#ffbd59"/>
+                    <Label Grid.Row="1"
+                           Grid.ColumnSpan="2"
+                           FontSize="15"
+                           Text="Home Based Workout"
+                           TextColor="white"/>
+                    <Label Grid.Row="1"
+                           Grid.Column="2"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"
+                           Text="3-4 sets til failure"
+                           TextColor="white"/>
+                </Grid>
+            </Border>
+
+            <ScrollView Grid.Row="3" Padding="15">
+                <Grid RowDefinitions="Auto,Auto,Auto">
+                    <VerticalStackLayout Margin="0,20,0,0" Spacing="10">
+                        <Label FontSize="20" Text="Description" TextColor="#FFBD59"/>
+                        <Label FontSize="16" LineHeight="1.3">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="PROCEDURE:" TextColor="#FFBD59"/>
+                                    <Span Text="
+                                          
+                                          
+1. Begin in the plank position, face down with your forearms and toes on the floor.
+                                          
+                                          
+
+2. Engage your abdominal muscles, drawing your navel toward your spine. Keep your torso straight and rigid and your body in a straight line from your ears to your toes with no sagging or bending.
+                                          
+                                          
+
+3. Hold this position for as many seconds as you can, then release to the floor."
+                                          TextColor="{StaticResource Gray300}"/>
+                                    <Span Text="
+                                          
+                                          BENEFITS:" TextColor="#FFBD59"/>
+                                    <Span Text="
+                                          
+                                          
+1.) Improves body balance and posture
+                                          
+
+2.) Strengthens your body core
+                                          
+                                          
+
+3.) Improves body flexibility
+                                          
+
+4.) Improves metabolism"
+                                          TextColor="{StaticResource Gray300}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ScrollView>
+</ContentPage>

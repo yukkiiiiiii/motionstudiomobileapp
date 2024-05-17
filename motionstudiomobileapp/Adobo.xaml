@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Adobo"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59"
+             Background="#fff"
+              Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+             StrokeThickness="0"
+             Background="#2b2b2b"
+             VerticalOptions="Start"
+             Padding="15"
+             >
+                <Grid ColumnDefinitions="*, 150"
+               RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+              Grid.Column="0"
+              Spacing="10">
+
+                        <Label Text="Adobo"
+                TextColor="#fff"
+                FontSize="25"
+                FontAttributes="Bold"
+                VerticalOptions="Center"/>
+                        <Frame TranslationX="70">
+                            <Image Source="adobo.jpg"
+                            Scale="1.4"
+                            Margin="0,0,20,0"
+                            />
+                        </Frame>
+
+                        <Label Text="ingridient:"              
+                TextColor="#FFBD59"
+                FontSize="25"
+                FontAttributes="Bold"/>
+                        <Label Text="1 kg chicken, pork, or a combination of both, cut into serving pieces
+                               
+                                    1 cup vinegar
+                               
+                                    1 cup soy sauce
+                               
+                                    4 cloves garlic, minced
+                               
+                                    1 onion, chopped
+                               
+                                    1 bay leaf
+                               
+                                    1 teaspoon peppercorns
+                               
+                                    1 tablespoon cooking oil
+                               
+                                    Salt to taste
+                               
+                                    Water (optional, for adjusting consistency)"              
+                        TextColor="#fff"
+                        FontSize="20"
+                        FontAttributes="Italic"/>
+
+                        <Label Text="Procedure:"              
+                         TextColor="#FFBD59"
+                         FontSize="25"
+                         FontAttributes="Bold"/>
+                        <Label Text="In a bowl, marinate the chicken or pork in soy sauce, vinegar, garlic, bay leaf, and peppercorns for at least 30 minutes to an hour.
+                                     Heat cooking oil in a pan. Sauté onion until translucent.
+                                     Add the marinated meat and cook until browned.
+                                     Pour in the marinade mixture and bring to a boil. Simmer until the meat is tender and the sauce has thickened.
+                                     Adjust seasoning with salt if needed. Add water if the sauce is too strong for your taste.
+                                     Serve hot with steamed rice."              
+                        TextColor="#fff"
+                        FontSize="20"
+                        FontAttributes="Italic"/>
+
+                        <Label Text="Benefits:"              
+ TextColor="#FFBD59"
+ FontSize="25"
+ FontAttributes="Bold"/>
+                        <Label Text="Rich in Protein: Adobo is typically made with chicken or pork, both excellent sources of protein that support muscle growth and repair."              
+TextColor="#fff"
+FontSize="20"
+FontAttributes="Italic"/>
+                    </VerticalStackLayout>
+
+
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

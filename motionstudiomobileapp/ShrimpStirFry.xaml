@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.ShrimpStirFry"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59"
+             Background="#fff"
+              Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+             StrokeThickness="0"
+             Background="#2b2b2b"
+             VerticalOptions="Start"
+             Padding="15"
+             >
+                <Grid ColumnDefinitions="*, 150"
+               RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+              Grid.Column="0"
+              Spacing="10">
+
+                        <Label Text="Shrimp and Vegetable Stir Fry"
+                TextColor="#fff"
+                FontSize="25"
+                FontAttributes="Bold"
+                VerticalOptions="Center"/>
+                        <Frame TranslationX="70">
+                            <Image Source="shrimpvege.jpg"
+                            Scale="1.4"
+                            Margin="0,0,20,0"
+                            />
+                        </Frame>
+
+                        <Label Text="Ingredient:"              
+                TextColor="#FFBD59"
+                FontSize="25"
+                FontAttributes="Bold"/>
+                        <Label Text="• Shrimp
+                               
+                               • Mixed vegetables (bell peppers, broccoli, carrots, snap peas)
+                               
+                               • Soy sauce
+                               
+                               • Garlic
+                               
+                               • Ginger
+                               
+                               • Olive oil
+                               
+                               • Rice"
+                        TextColor="#fff"
+                        FontSize="20"
+                        FontAttributes="Italic"/>
+
+                        <Label Text="Procedure:"              
+                         TextColor="#FFBD59"
+                         FontSize="25"
+                         FontAttributes="Bold"/>
+                        <Label Text="Add finely chopped ginger and garlic to a skillet of heated olive oil. Stir-fry the shrimp until they turn pink and are fully done. Cook the mixed veggies until they become crisp-tender. Add soy sauce and serve with cooked rice, stirring."              
+                        TextColor="#fff"
+                        FontSize="20"
+                        FontAttributes="Italic"/>
+
+                        <Label Text="Benefits:"              
+ TextColor="#FFBD59"
+ FontSize="25"
+ FontAttributes="Bold"/>
+                        <Label Text="Shrimp is low in calories and a good source of protein.
+* Mixed vegetables provide vitamins, minerals, and fiber.
+* Stir-frying retains the nutrients in the vegetables."             
+TextColor="#fff"
+FontSize="20"
+FontAttributes="Italic"/>
+                    </VerticalStackLayout>
+
+
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

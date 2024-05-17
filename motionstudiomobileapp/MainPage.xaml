@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Shell.TitleColor="#ffbd59"
+             Shell.BackgroundColor="#ffbd59"
+             BackgroundColor="#2b2b2b"
+             Shell.ForegroundColor="#ffbd59"
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarIsVisible="False"
+             >
+      
+    
+    <ContentPage.Content>
+        <Grid
+            BackgroundColor="#2b2b2b"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" HorizontalOptions="Center">
+                <Image
+                    Margin="0,30"                  
+                    Scale="0.7"                   
+                    Source="update.png"
+                     />
+            </StackLayout>
+            
+            <Image
+                Source="white.png"                       
+                Scale="0.5"
+                Margin="0,-100,0,-85"/>
+            
+            <Frame
+                Grid.Row="1"
+                Margin="0,0,0,-230"
+                BorderColor="#ffa114"
+                BackgroundColor="#2b2b2b"
+                CornerRadius="50"
+                HasShadow="True"
+                HeightRequest="700">
+                <Grid
+                    Padding="20,50,20,0"
+                    HorizontalOptions="FillAndExpand"
+                    RowSpacing="20"
+                    VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                   
+                    <Label
+                        Grid.Row="0"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Welcome!"
+                        TextColor="#ffbd59" />
+                    <Label
+                        Grid.Row="1"
+                        Margin="0,-15,0,0"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Login in to account"
+                        TextColor="#fff" />
+                    <Entry
+                        Grid.Row="2"
+                        Margin="0,20,0,0"
+                        HorizontalOptions="FillAndExpand"
+                        Placeholder="Email"
+                        Text="{Binding UserName}"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry
+                       
+                        Grid.Row="3"
+                        HorizontalOptions="FillAndExpand"
+                        IsPassword="{Binding IsPasswordHidden, Mode=TwoWay}"
+                        Placeholder="Password"
+                        Text="{Binding UserPassword}"
+                        VerticalOptions="FillAndExpand" 
+                        Keyboard="Chat"/>
+
+                    <Button x:Name="passwordToggleButton"
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            ImageSource="showpass.png"
+                            BackgroundColor="#2b2b2b"                       
+                            Command="{Binding ShowPasswordCommand}"
+                            Scale="0.55"
+                            HorizontalOptions="End"/>
+
+                    <Button
+                        Grid.Row="4"
+                        BackgroundColor="#ffbd59"
+                        Command="{Binding LoginBtn}"
+                        CornerRadius="20"
+                        Text="Login" 
+                        FontAttributes="Bold"
+                        />
+
+                    <Button
+                        Grid.Row="5"
+                        BackgroundColor="#ffbd59"
+                        Command="{Binding RegisterBtn}"
+                        CornerRadius="20"
+                        Text="Register using Email" 
+                        FontAttributes="Bold"/>
+
+
+                    
+                    
+                   
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

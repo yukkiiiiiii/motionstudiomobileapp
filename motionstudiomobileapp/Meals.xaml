@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Meals"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59"
+             BackgroundColor="#fff"
+              Shell.ForegroundColor="#2b2b2b"
+             Padding="17">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 10"
+        StrokeThickness="0"
+        Background="#2b2b2b"
+        VerticalOptions="Start"
+        Padding="15">
+                <Grid ColumnDefinitions="*, 150"
+          RowDefinitions="*, auto">
+                    <VerticalStackLayout Grid.Row="0"
+                             Grid.Column="0"
+                             Spacing="10">
+                        <Label Text="MEALS"
+                               TextColor="#fff"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"/>
+
+                        <Label Text="Fuel your day with deliciousness! Explore a wide variety of cuisines and meals to find the perfect fit for your taste buds and dietary needs. Order from top restaurants near you or discover new recipes to cook at home."              
+                               TextColor="#fff"
+                               FontSize="15"
+                               FontAttributes="Italic"/>
+
+                    </VerticalStackLayout>
+
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="1"
+                           Source="mealser.png"
+                           Scale="0.7"
+                           HeightRequest="150"
+                           WidthRequest="150"/>
+
+                </Grid>
+            </Border>
+
+            <BoxView HeightRequest="15"
+                     Color="White"/>
+
+
+            <FlexLayout Wrap="Wrap"
+                        Margin="6">
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2">
+                    <!--spaghetti option-->
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-35,0">
+                        <Image Grid.Row="0"
+                               Source="spag.jpg"/>
+
+                        <Label Grid.Row="1"
+                               Text="Spaghetti"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,125,0"/>
+
+                        <Button Grid.Row="2"
+                                Text="Info"                
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Clicked="SpagBtn"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>    
+
+                    </Grid>
+
+                </Border>
+                
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2"
+                        >
+
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-35,0">
+                        <Image Grid.Row="0"
+                               Source="tunaome.jpg"/>
+                        <!--tuna omelette option-->
+                        <Label Grid.Row="1"
+                               Text="Tuna Omelette"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,100,0"
+                                />
+
+                        <Button Grid.Row="2"
+                                Text="Info"               
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Clicked="TunaBtn"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>
+
+                    </Grid>
+
+                </Border>
+                    
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2"
+                        >
+
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-73,0">
+                        <Image Grid.Row="0"
+                               Source="bananaprot.jpg"
+                               WidthRequest="220"
+                               TranslationX="-7"
+                               TranslationY="-9"
+                               Scale="1.1"/>
+                        <!--banana protein shake option-->
+                        <Label Grid.Row="1"
+                               Text="Banana Protein Shake"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,55,0"/>
+
+                        <Button Grid.Row="2"
+                                Text="Info"    
+                                Clicked="bananaBtn"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>
+
+                    </Grid>
+
+                </Border>
+
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2"
+                         
+                        >
+
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-40,0">
+                        <Image Grid.Row="0"
+                               Source="chickentinola.jpg"
+                               TranslationX="7"
+                               TranslationY="-17"
+                               Scale="1.2"/>
+                        <!--Chicken Tinola option-->
+                        <Label Grid.Row="1"
+                               Text="Chicken Tinola"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,103,0"
+                                />
+
+                        <Button Grid.Row="2"
+                                Text="Info"  
+                                Clicked="tinolaBtn"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>
+
+                    </Grid>
+
+                </Border>
+
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2"
+                        >
+
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-43,0">   
+                        <Image Grid.Row="0"
+                               Source="shrimpvege.jpg"
+                               TranslationX="-2"
+                               TranslationY="-10"
+                               Scale="1.1"/>
+                        <!--Shirmp and Vegetable Stir Fry option-->
+                        <Label Grid.Row="1"
+                               Text="Shirmp and Vegetable Stir Fry"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,15,0"/>
+
+                        <Button Grid.Row="2"
+                                Text="Info"                
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Clicked="stirfryBtn"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>
+
+                    </Grid>
+
+                </Border>
+
+                <Border StrokeShape="RoundRectangle 10"
+                        StrokeThickness="0"
+                        BackgroundColor="#2b2b2b"
+                        Padding="0"
+                        Margin="2"
+                        
+                        >
+
+                    <Grid RowDefinitions="112, Auto, auto, Auto"
+                          RowSpacing="5"
+                          Margin="0,0,-40,0"
+                          >
+                        <Image Grid.Row="0"
+                               Source="adobo.jpg"
+                               TranslationX="7"
+                               TranslationY="-17"
+                               Scale="1.2"
+                               />
+                        <!--adobo option-->
+                        <Label Grid.Row="1"
+                               Text="Filipino Adobo"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#ffbd59"
+                               HorizontalOptions="Center"
+                               Margin="0,0,103,0"
+                                />
+
+                        <Button Grid.Row="2"
+                                Text="Info"               
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Clicked="adoboBtn"
+                                BackgroundColor="#ffbd59"
+                                CornerRadius="5"
+                                HorizontalOptions="Center"
+                                WidthRequest="170"
+                                HeightRequest="40"
+                                Margin="0,10,14,0"/>
+
+                    </Grid>
+
+                </Border>
+            </FlexLayout>
+
+            <Label Text="_____________________________________________________________"
+       TextColor="#2b2b2b"
+       TranslationY="12"/>
+            <Frame BorderColor="#fff"
+       TranslationY="12">
+                <Label Text="More meals to come..."
+           TextColor="#2b2b2b"
+           HorizontalOptions="Center"
+           FontSize="16"/>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

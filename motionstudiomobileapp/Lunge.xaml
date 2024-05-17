@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="motionstudiomobileapp.Lunge"
+             NavigationPage.HasNavigationBar="False"
+             Shell.BackgroundColor="#ffbd59">
+    <ScrollView>
+        <Grid Margin="15" RowDefinitions="Auto,Auto,Auto,Auto">
+            <Border Grid.Row="0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Grid RowDefinitions=".3*,.7*">
+                    <Image Grid.RowSpan="2"
+                           Aspect="AspectFill"
+                           TranslationY="0"
+                           Source="lunge.jpg"/>
+                    <Grid ColumnDefinitions="*,*">
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Stroke="#2b2b2b">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30,30,30,30"/>
+                </Border.StrokeShape>
+                <Grid Padding="20"
+                      BackgroundColor="#4b4b4b"
+                      ColumnDefinitions=".5*,.25*,.5*"
+                      RowDefinitions="Auto,Auto,Auto">
+                    <Label Grid.ColumnSpan="2"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           Text="Lunge"
+                           TextColor="#ffbd59"/>
+                    <Label Grid.Column="2"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"
+                           Text="Recommended sets"
+                           TextColor="#ffbd59"/>
+                    <Label Grid.Row="1"
+                           Grid.ColumnSpan="2"
+                           FontSize="15"
+                           Text="Home Based Workout"
+                           TextColor="white"/>
+                    <Label Grid.Row="1"
+                           Grid.Column="2"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"
+                           Text="3 sets of 15-20 reps"
+                           TextColor="white"/>
+                </Grid>
+            </Border>
+
+            <ScrollView Grid.Row="3" Padding="15">
+                <Grid RowDefinitions="Auto,Auto,Auto">
+                    <VerticalStackLayout Margin="0,20,0,0" Spacing="10">
+                        <Label FontSize="20" Text="Description" TextColor="#FFBD59"/>
+                        <Label FontSize="16" LineHeight="1.3">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="PROCEDURE:" TextColor="#FFBD59"/>
+                                    <Span Text="
+                                          
+                                          
+1. Stand tall with feet hip-width apart. Engage your core.
+                                          
+                                          
+2. Take a big step forward with right leg. Start to shift your weight forward so heel hits the floor first.
+                                          
+                                          
+3. Lower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe.
+                                          
+                                          
+4. Press into right heel to drive back up to starting position, and repeat the other side."
+                                          TextColor="{StaticResource Gray300}"/>
+                                    <Span Text="
+                                          
+                                          BENEFITS:" TextColor="#FFBD59"/>
+                                    <Span Text="
+                                          
+                                          
+1. Improves your overall balance
+                                          
+                                          
+2. It corrects muscle imbalances
+                                          
+3. Minimizes risk of injury
+                                          
+4. Greater glute activation"
+                                          TextColor="{StaticResource Gray300}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ScrollView>
+</ContentPage>
